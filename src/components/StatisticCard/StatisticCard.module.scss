@@ -1,0 +1,29 @@
+.statisticCard_area {
+    width: 260px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+
+    .statisticCard_info {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: rgb(160, 152, 174);
+            font-size: 18px;
+            line-height: 27px;
+            font-family: "Poppins-Regular-400";
+        }
+
+        h4 {
+            font-family: "Poppins-Bold-700";
+            color: rgb(48, 57, 114);
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+
+.my-calendar {
+    border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 60%;
+}
+
+.my-calendar .react-calendar__tile {
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 20px;
+}
+
+.my-calendar .react-calendar__tile--now {
+  background-color: #e0f7fa;
+}
+
+.my-calendar .react-calendar__tile--active  {
+  background-color: rgb(251, 125, 91);
+  color: white;
+  border: none;
+}
+
+
+.my-calendar .react-calendar__tile:hover {
+  background-color:  rgb(120, 114, 191);
+  color: white;
+  transition-duration: 0.5s;
+
+}
+
+.my-calendar .event-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: aqua;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+
+.my-calendar .events {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: rgb(110, 107, 107);
+}
+
+.react-calendar__month-view__days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation__label {
+  font-size: 25px;
+  font-family: "Poppins-Bold-700";
+  color: rgb(77, 68, 181);
+
+}
+
+
+.react-calendar__navigation__prev-button,
+.react-calendar__navigation__next-button,
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  font-size: 2em;
+  color: rgb(77, 68, 181);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.react-calendar__navigation__prev-button:hover,
+.react-calendar__navigation__next-button:hover,
+.react-calendar__navigation__prev2-button:hover,
+.react-calendar__navigation__next2-button:hover,
+.react-calendar__navigation__label:hover  {
+    transition-duration: 0.5s;
+    color: rgb(251, 125, 91);
+    background-color: transparent !important; 
+
+}
+.react-calendar__month-view__weekdays__weekday {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(160, 152, 174);
+  font-family: "Poppins-SemiBold-600";
+  font-size: 20px;
+  line-height: 21px;
+}
+

@@ -1,0 +1,95 @@
+.current_date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  padding: 33px;
+  border-radius: 20px;
+
+  h4 {
+    font-family: "Poppins-SemiBold-600";
+    font-size: 25px;
+    color: rgb(160, 152, 174);
+  }
+
+  span {
+    font-family: "Poppins-ExtraBold-800";
+    font-size: 20px;
+    color: rgb(48, 57, 114);
+  }
+}
+
+.event_area {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  flex-wrap: wrap;
+  height: 550px;
+
+  .events_area_info {
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+    background: rgba(77, 68, 181, 0.1);
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    overflow: auto;
+    height: inherit;
+
+
+    h3 {
+      font-family: "Poppins-Bold-700";
+      color: #323232;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      border: 2px solid rgb(77, 68, 181);
+      padding: 10px;
+      border-radius: 15px;
+      background-color: rgb(77, 68, 181);
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(29, 25, 70);
+    }
+
+    button:active {
+      background-color: rgb(148, 140, 205);
+    }
+
+    ul {
+      color: rgb(77, 68, 181);
+      font-family: "Poppins-Medium-500";
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+.noteList {
+  overflow-wrap: break-word;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.events_area_info::-webkit-scrollbar {
+  width: 5px;
+}
+
+.events_area_info::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.events_area_info::-webkit-scrollbar-thumb {
+  background-color: rgb(77, 68, 181);
+  border-radius: 10px;
+}

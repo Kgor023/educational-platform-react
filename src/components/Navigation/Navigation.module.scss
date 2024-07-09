@@ -1,0 +1,27 @@
+.navigation_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        font-family: 'Poppins-Medium-500';
+        text-decoration: none;
+        color: rgb(193, 187, 235);
+        font-size: 21px;
+        line-height: 27px;
+        width: 299px;
+        padding:18px 0px 18px 24px;
+
+    }
+  
+}
+div a.active{
+    color: rgb(77, 68, 181);
+    border-radius: 40px 0px 0px 40px;
+    background-color: rgb(243, 244, 255);
+}

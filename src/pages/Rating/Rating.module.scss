@@ -1,0 +1,74 @@
+.stats_area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+
+
+}
+
+.rating_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .rating_area__graph {
+        margin: 0px;
+        width: 78%;
+    }
+
+    .rating_stats_area_students {
+        width: 300px;
+        border-radius: 20px;
+        height: 600px;
+        background-color: white;
+        display: flex;
+        padding-bottom: 20px;
+        flex-direction: column;
+
+        h2 {
+            color: white;
+            font-size: 18px;
+            line-height: 27px;
+            font-family: "Poppins-Regular-400";
+            background: rgb(252, 196, 62);
+            width: 100%;
+            padding: 10px 0px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .rating_stats_area_students_list {
+            overflow-y: auto;
+
+            .rating_stats_area_student {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 10px 20px;
+                box-sizing: border-box;
+
+                .rating_stats_student__name {
+                    color: rgb(48, 57, 114);
+                    font-family: "Poppins-SemiBold-600";
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+
+                span {
+                    color: rgb(48, 57, 114);
+                    font-family: "Poppins-SemiBold-600";
+                    font-size: 15px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}

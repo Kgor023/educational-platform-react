@@ -1,0 +1,36 @@
+.header {
+ 
+    max-width: 345px;
+    flex-basis: 345px;
+    height: 100vh;
+    background-color: rgb(77, 68, 181);
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    .header_logo {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .header_title {
+        font-family: 'Poppins-Bold-700';
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: 46px;
+        margin-top: 60px;
+        justify-content: center;
+        gap: 28px
+    }
+}

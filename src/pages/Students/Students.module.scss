@@ -1,0 +1,215 @@
+.addNewStudent_area {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.addNewStudent_area.show {
+    display: flex;
+}
+
+.addNewStudent_card {
+    width: 900px;
+    padding: 20px 50px 50px;
+    background-color: white;
+    z-index: 6;
+    border-radius: 20px;
+
+    h2 {
+        color: rgb(48, 57, 114);
+        font-family: "Poppins-Bold-700";
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .add_form_inputArea {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .add_form_input {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                label {
+                    font-family: "Poppins-Medium-500";
+                    font-size: 18px;
+                    color: #323232;
+                }
+
+                input {
+                    padding: 10px;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    padding: 8px;
+                    box-sizing: border-box;
+                }
+
+            }
+        }
+
+
+        .add_form_buttonArea {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+
+            button {
+                width: 200px;
+                border-radius: 10px;
+                background-color: rgb(77, 68, 181);
+                font-family: "Poppins-Regular-400";
+                color: rgb(255, 255, 255);
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            button:hover {
+                background-color: rgb(50, 44, 115);
+                cursor: pointer;
+            }
+
+            button:active {
+                background-color: rgb(68, 64, 114);
+            }
+        }
+    }
+
+}
+
+
+
+
+.students_area {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    margin-top: 90px;
+
+
+    .student_card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+        border-radius: 20px;
+        background: white;
+        text-decoration: none;
+        z-index: 1;
+        position: relative;
+        width: 35%;
+        gap: 10px;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .student_name {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Bold-700";
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+
+        h4 {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(251, 125, 91);
+            border-radius: 10px;
+            color: white;
+            font-family: "Poppins-ExtraLight-200";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        .student_card_info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+
+            a {
+                img {
+                    z-index: 3;
+                    width: 32px;
+                    height: 32px;
+                }
+
+            }
+        }
+
+        .student_card_deleteButton {
+            color: rgb(171, 8, 8);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 15px;
+            font-weight: 800;
+            border-style: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .student_card_deleteButton:hover {
+            color: black;
+            transform: scale(1.2);
+        }
+    }
+
+    .student_card:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition-duration: 0.7s;
+    }
+}
+
+.paginationControls {
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 500px;
+
+    button {
+        padding: 5px 0px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    span {
+        font-size: 20px;
+        font-family: "Poppins-Bold-700";
+        color: #323232;
+    }
+}

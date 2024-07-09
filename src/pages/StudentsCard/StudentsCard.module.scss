@@ -1,0 +1,220 @@
+%flexBoxColumnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+%flexBoxRowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+%studentInfoHeadTitle {
+    color: rgb(48, 57, 114);
+    font-family: "Poppins-Bold-700";
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.students_card_area {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+ 
+    .student_details_area {
+        max-width: 50%;
+        background-color: white;
+        border-radius: 20px;
+        position: relative;
+        @extend %flexBoxColumnContainer;
+        gap: 30px;
+        padding: 20px 35px 80px;
+
+        .student_details_info {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+
+            .student_details__image {
+                max-width: 200px;
+                height: 200px;
+                border: 7px solid white;
+                border-radius: 50%;
+
+            }
+
+            .student_details_name {
+                @extend %flexBoxColumnContainer;
+                gap: 10px;
+
+                h2 {
+                    color: rgb(48, 57, 114);
+                    font-family: "Poppins-Bold-700";
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+
+                h5 {
+                    color: rgb(160, 152, 174);
+                    font-family: "Poppins-Regular-400";
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+
+        }
+
+
+
+
+
+
+        .student_details_contact {
+            @extend %flexBoxRowContainer;
+            gap: 20px;
+
+            .student_details_contact_info {
+                @extend %flexBoxRowContainer;
+                gap: 10px;
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-SemiBold-600";
+                font-size: 18px;
+                line-height: 27px;
+
+                a {
+                    text-decoration: none;
+                    gap: 16px;
+                    color: rgb(48, 57, 114);
+                    font-family: "Poppins-SemiBold-600";
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .student_details_peronality {
+            @extend %flexBoxColumnContainer;
+            @extend %studentInfoHeadTitle;
+            gap: 15px;
+
+            .student_details_peronality_info {
+                @extend %flexBoxRowContainer;
+                gap: 30px;
+
+                .student_details_peronality_info_trait {
+                    @extend %flexBoxRowContainer;
+
+                    h5 {
+                        color: rgb(48, 57, 114);
+                        font-family: "Poppins-SemiBold-600";
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+
+                    span {
+                        color: rgb(160, 152, 174);
+                        font-family: "Poppins-SemiBold-600";
+
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+        .student_details_about {
+            @extend %flexBoxColumnContainer;
+
+            h3 {
+                @extend %studentInfoHeadTitle;
+            }
+
+            p {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Regular-400";
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+
+        }
+
+        .student_details_education {
+            @extend %flexBoxColumnContainer;
+
+            h3 {
+                @extend %studentInfoHeadTitle;
+            }
+
+            p {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Regular-400";
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+        }
+
+    }
+
+    .schedule_area {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid rgb(48, 57, 114);
+
+        h3 {
+            color: rgb(48, 57, 114);
+            font-family: "Poppins-Bold-700";
+            text-align: center;
+            font-size: 26px;
+            line-height: 36px;
+
+        }
+
+        .schedule_days_area {
+            @extend %flexBoxRowContainer;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            padding-left: 10px;
+            flex-wrap: wrap;
+            max-width: 550px;
+
+            .schedule_day {
+                border: 1px solid rgb(48, 57, 114);
+                width: 250px;
+                border-radius: 22px;
+                padding-bottom: 10px;
+
+                h4 {
+                    font-family: "Poppins-Regular-400";
+
+                    color: rgb(48, 57, 114);
+                    font-size: 25px;
+                    line-height: 27px;
+                    background-color: rgb(251, 125, 91);
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    border-top-left-radius: 22px;
+                    border-top-right-radius: 22px;
+                    border: 1px solid rgb(48, 57, 114);
+
+                }
+
+                ul {
+                    padding-left: 30px;
+                    padding-top: 10px;
+
+                    li {
+                        font-size: 24px;
+                        color: rgb(48, 57, 114);
+                    }
+                }
+            }
+        }
+    }
+}

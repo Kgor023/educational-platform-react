@@ -1,0 +1,32 @@
+.addButton_area {
+    display: flex;
+    justify-content: flex-end;
+
+    .addButton {
+        border-radius: 40px;
+        box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+        background-color: rgb(77, 68, 181);
+        gap: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins-Regular-400";
+        padding: 16px 43px 16px 43px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 27px;
+        cursor: pointer;
+        border: none;
+
+
+    }
+
+    .addButton:hover {
+        background-color: rgb(50, 44, 115);
+    }
+
+    .addButton:active {
+        background-color: rgb(68, 64, 114);
+    }
+}

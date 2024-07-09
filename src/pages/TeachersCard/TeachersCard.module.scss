@@ -1,0 +1,146 @@
+%flexBoxColumnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+%flexBoxRowContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+%teacherInfoHeadTitle {
+    color: rgb(48, 57, 114);
+    font-family: "Poppins-Bold-700";
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.teacher_details_area {
+    max-width: 1017px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+
+    .teacher_details__image {
+        width: 200px;
+        height: 200px;
+        border: 7px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 32px;
+        left: 32px;
+    }
+
+    .teacher_details_info {
+        @extend %flexBoxColumnContainer;
+        gap: 30px;
+        padding: 120px 35px 80px;
+
+        .teacher_details_name {
+            @extend %flexBoxColumnContainer;
+            gap: 10px;
+
+            h2 {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Bold-700";
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            h5 {
+                color: rgb(160, 152, 174);
+                font-family: "Poppins-Regular-400";
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+
+        .teacher_details_contact {
+            @extend %flexBoxRowContainer;
+            gap: 46px;
+
+            .teacher_details_contact_info {
+                @extend %flexBoxRowContainer;
+                gap: 16px;
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-SemiBold-600";
+                font-size: 18px;
+                line-height: 27px;
+
+                a {
+                    text-decoration: none;
+                    gap: 16px;
+                    color: rgb(48, 57, 114);
+                    font-family: "Poppins-SemiBold-600";
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .teacher_details_peronality {
+            @extend %flexBoxColumnContainer;
+            @extend %teacherInfoHeadTitle;
+            gap: 15px;
+
+            .teacher_details_peronality_info {
+                @extend %flexBoxRowContainer;
+                gap: 30px;
+
+                .teacher_details_peronality_info_trait {
+                    @extend %flexBoxRowContainer;
+
+                    h5 {
+                        color: rgb(48, 57, 114);
+                        font-family: "Poppins-SemiBold-600";
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+
+                    span {
+                        color: rgb(160, 152, 174);
+                        font-family: "Poppins-SemiBold-600";
+
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+
+        .teacher_details_about {
+            @extend %flexBoxColumnContainer;
+
+            h3 {
+                @extend %teacherInfoHeadTitle;
+            }
+
+            p {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Regular-400";
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+
+        }
+
+        .teacher_details_education {
+            @extend %flexBoxColumnContainer;
+
+            h3 {
+                @extend %teacherInfoHeadTitle;
+            }
+
+            p {
+                color: rgb(48, 57, 114);
+                font-family: "Poppins-Regular-400";
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+
+}
